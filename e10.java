@@ -6,8 +6,8 @@ public class e10 {
 		// TODO Auto-generated method stub
      System.out.println("Program initiated");
 		int a;
-		long b=0,c;
-     for(a=2;a<1000000;a++)
+		long b=0;
+     for(a=2;a<2000000;a++)
      {
     	 boolean r=checkPrime(a);
     	 if(r)
@@ -16,19 +16,8 @@ public class e10 {
      	 }
      }
 	
-     for(a=1000000;a<=2000000;a++)
-     {
-    	 boolean r=checkPrime(a);
-    	 if(r)
-    	 {
-    		  b=b+a;
-     	 }
-     }
-	c=b;
 	System.out.println("The sum of the primes is "+c);	
-		
-		
-		
+
 	}
 
 	private static boolean checkPrime(int a) {
