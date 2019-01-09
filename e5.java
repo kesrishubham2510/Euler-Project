@@ -6,23 +6,22 @@ public class e5 {
 		// TODO Auto-generated method stub
 		int r=0;
 		long t;  //2520 is The smallest divisible by each and every number between 1 tom 10;
-	System.out.println("programme initiated....");
-			for(t=2520;r!=20;t++)
+	 System.out.println("programme initiated....");
+			for(t=2521;r!=19;t++)
 				{ 
-				   r=0;int m=0;
-				  for(int d=3;d<=20&&m==0;d++)
-				  {   if(d==4||d==5||d==10)
-					  continue;
-					 
-				      else if(t%d==0)
+				   
+				  for(int d=2;d<=20;d++)
+				  {    
+				       if(t%d==0)
 					  r++;
 	                  
 					  else
-					   break;
-					 
+					  {        r=0;
+						  break;
+				          }
 				  }
                	}
-			System.out.println("The smallest divisible by each and every number between 1 tom 20 is "+t);
+			System.out.println("The smallest divisible by each and every number between 1 tom 20 is "+(t-1));
 
 	}
 
