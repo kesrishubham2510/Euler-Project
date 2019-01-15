@@ -7,22 +7,18 @@ public class pythagoreanTrie9 {
      System.out.println("Program initiated");
 		int g;
 		double  a=0,b=0,c=0;
-		for(a=0;a<=1000;a++)
+		for(a=3;a<=1000;a++)   //pythagorean triplets starts with 3;
 		{
-			for(b=0;b<=1000;b++)
+			for(b=a+1;b<=1000;b++)
 			{
-				for(c=0;c<=1000;c++)
-				{
-				   	if((a*a+b*b==c*c)&&(a+b+c==1000)&&(a<b&&b<c))
-				   		System.out.println("a= "+a+" b= "+b+" c= "+c);
-				}
-				   			
+			   c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+				   if((a*a+b*b==c*c)&&(a+b+c==1000)&&(a<b&&b<c))
+				   {	System.out.println("a= "+a+" b= "+b+" c= "+c);
+				        System.exit(0); //after getting the value the program itself is called to termination with this code.
+				   }			
 			}
 			  			
 		}
-		System.out.println();	
-		
-		
+		System.out.println();		
 	}
-
 }
