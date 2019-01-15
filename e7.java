@@ -30,7 +30,7 @@ private static boolean checkPrime(long c) {
 	
 	 int d=0,e;
 	 
-	 for(e=2;e<c;e++)
+	 for(e=2;e<=Math.sqrt(c);e++)
 	 {
 		 if(c%e==0)
 			 { d++;
