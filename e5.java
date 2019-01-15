@@ -20,7 +20,7 @@ public class e5 {
 						  break;
 				          }
 				  }
-               	}
+                        	}
 			System.out.println("The smallest divisible by each and every number between 1 tom 20 is "+(t-1));
 
 	}
