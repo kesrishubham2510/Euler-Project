@@ -2,10 +2,7 @@ package euler;
 
 public class e4 {
 
-	public static void main(String[] args) {
-		
-		System.out.println("The largest pallindrome is ");
-     
+	public static void main(String[] args) {     
      long a,g=0,b,c,z;
         for(a=100;a<1000;a++)
      {                                                       
@@ -35,5 +32,4 @@ public class e4 {
 		else
 			return false;
 	}
-
 }
