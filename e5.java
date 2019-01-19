@@ -14,4 +14,16 @@ public class e5 {
 		}
 		return ans;
        }
+       
+       public static long gcd(long a,long b)
+        {  
+	long rem;
+	while(b!=0)
+	{
+             rem=a%b;
+	     a=b;
+	     b=rem;     
+       }
+             return a;
+}
 }
